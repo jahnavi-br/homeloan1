@@ -1,0 +1,119 @@
+
+.outer{
+  height: 100vh;
+  /* background: linear-gradient(to top,#bcbf93 50%, #c3c59e) no-repeat;
+   */
+}
+.center{
+  margin-right: auto;
+  margin-left: auto;
+}
+  .panel-heading{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button {
+  border: none;
+  color: #f4b6c2;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+.button1 {
+  background-color: #a1a888;
+  color: black;
+ 
+  text-decoration: none;
+  align-self: center;
+}
+
+.button1:hover {
+  background-color: #bcbf93;
+  color: white;
+}
+
+      .hi{
+        text-decoration: none;
+        color: black;
+      }
+      body{
+        background-image: url('C:\Users\DELL\homeloan1\src\assets\img\Bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+              }
+              #forget{
+                min-width: 100px;
+                text-decoration: none;
+                cursor: pointer;
+              }
+              a:hover{
+                text-decoration: none;
+              }
+              .form-inline label{
+                padding-left: 10px;
+                margin: 0;
+                cursor: pointer;
+              }
+              input[type='text'],input[type='password']{
+                border:none;
+                outline: none;
+                box-shadow: none;
+                width: 100%;
+               color: none;
+              }
+              .fa-eye-slash.btn{
+               border:none;
+               outline: none;
+               box-shadow: none;
+              }
+              img{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+                position: relative;
+              }
+              .input-field {
+                border-radius: 5px;
+                padding: 5px;
+                display: flex;
+                cursor: pointer;
+                border: 1px solid #ddd;
+                color: black;
+                position: relative;
+                background-color: transparent; /* Set the background color to transparent */
+              }
+              .input-field-error{
+                border:1px solid red;
+                color: red;
+              }
+              .panel {
+                min-height: 300px;
+                box-shadow: 20px 20px 80px rgb(218,218,218);
+                border-radius: 12px;
+                margin-top: 100px;
+              }
+              .form-control {
+                width: 600px;
+                fill: none;
+                background: white; /* Set the background color to transparent */
+                border: none;
+                border-bottom: 1px solid grey;
+                font-size: 18px;
+                margin-bottom: 16px;
+              }
+            panel border{
+              background-color: #bb8c68;
+            }

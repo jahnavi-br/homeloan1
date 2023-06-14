@@ -1,0 +1,52 @@
+.button {
+    border: none;
+    color: #f4b6c2;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+  }
+  
+  .button1 {
+    background-color: #bb8c68;
+    color: black;
+    border: 2px solid #bb8c68;
+    text-decoration: none;
+  }
+  
+  .button1:hover {
+    background-color: #d0a480;
+    color: white;
+  }
+  .container{
+    position:fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   width:500px;
+    padding:2rem;
+    background:#c5c398;
+    box-sizing: border-box;
+    box-shadow: 0 16px 25px rgb(0, 0, 0);
+    border-radius: 14px;
+    text-align: Center;
+    }
+   .center{
+    margin-left: auto;
+    margin-right: auto;
+   }
+   body{
+    background-image: url('C:\Users\DELL\homeloan1\src\assets\img\Bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }

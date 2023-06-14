@@ -1,0 +1,53 @@
+
+.about-us-section,
+.contact-us-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #c5c398;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.about-us-section h2,
+.contact-us-section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us-section p,
+.contact-us-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.about-us-section p:first-child,
+.contact-us-section p:first-child {
+  margin-top: 0;
+}
+
+.about-us-section p:last-child,
+.contact-us-section p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-us-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-us-section li {
+  margin-bottom: 10px;
+}
+body{
+  background-image: url('C:\Users\DELL\homeloan1\src\assets\img\Bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
