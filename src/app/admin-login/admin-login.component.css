@@ -43,16 +43,7 @@
         text-decoration: none;
         color: black;
       }
-      body{
-        background-image: url('C:\Users\DELL\homeloan1\src\assets\img\Bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-              }
+   
               #forget{
                 min-width: 100px;
                 text-decoration: none;
@@ -117,3 +108,4 @@
             panel border{
               background-color: #bb8c68;
             }
+           

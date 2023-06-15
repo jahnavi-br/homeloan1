@@ -1,61 +1,77 @@
 <body>
+
+    <div class="outer">
     <div class="container">
-  <h1>Registration</h1>
-  <table class="center">
-      <tr>
-          <td>
-              <label>First Name</label>
-          </td>
-          <td>
-              <input>
-          </td>
-      </tr>
-      <tr>
-          <td>
-              <label>Last Name</label>
-          </td>
-          <td>
-              <input>
-          </td>
-      </tr>
-      <tr>
-          <td>
-              <label>Email ID</label>
-          </td>
-          <td>
-              <input>
-          </td>
-      
-      </tr>
-      <tr>
-          <td>
-              <label>Password</label>
-          </td>
-          <td>
-              <input type="password">
-          </td>
-      
-      </tr>
-      <tr>
-          <td>
-              <label>Confirm Password</label>
-          </td>
-          <td>
-              <input type="password">
-          </td>
-      
-      </tr>
-      <tr>
-          <td>
-              <label>Phone Number</label>
-          </td>
-          <td>
-              <input>
-          </td>
-      
-   
-  </table>
-  <button  class="button button1">Submit</button>
-  <router-outlet></router-outlet>
-  </div>
+      <div class="row">
+        <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3 ">
+          <div class="panel border bg-white">
+      <div class="panel-heading">
+        <h2 class="pt-2 font-weight-bold">Sign Up</h2>
+      </div>
+      <div class="panel-body pt-2">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+            <div class="form-group pt-2">
+                <div class="input-field">
+                  <span class="fa fa-user p-1"> </span>
+                    <input formControlName="fName" type="text" placeholder="First Name">
+                    
+                 
+                </div>
+                <small *ngIf="registerForm.controls['fName'].dirty && registerForm.controls['fName'].hasError('required')" class="text-danger">*Full Name is Required</small>
+
+              </div>
+              <div class="form-group pt-2">
+                <div class="input-field">
+                  <span class="fa fa-user p-1"> </span>
+                    <input formControlName="lName" type="text" placeholder="Last Name">
+                  
+                 
+                </div>
+                <small *ngIf="registerForm.controls['lName'].dirty && registerForm.controls['lName'].hasError('required')" class="text-danger">*Last Name is Required</small>
+
+              </div>
+          <div class="form-group pt-2">
+            <div class="input-field">
+              <span class="fa fa-at p-1"> </span>
+                <input formControlName="emailID" type="text" placeholder="Email ID">
+             
+             
+            </div>
+            <small *ngIf="registerForm.controls['emailID'].dirty && registerForm.controls['emailID'].hasError('required')" class="text-danger">*Email is Required</small>
+
+          </div>
+          <div class="foem-group pt-2">
+            <div class="input-field">
+              <span class="fa fa-lock p-1"> </span>
+                 <input formControlName="password" [type]="type" placeholder="Password">
+                <span (click)="hideShowPass()" class = " fa {{eyeIcon}}">  </span>        
+              
+            </div>
+            <small *ngIf="registerForm.controls['password'].dirty && registerForm.controls['password'].hasError('required')" class="text-danger">*Password is Required</small>
+          </div>
+          <div class="form-group pt-2">
+            <div class="input-field">
+              <span class="fa fa-phone p-1"> </span>
+                <input formControlName="Phone" type="text" placeholder="Phone Number">
+               
+             
+            </div>
+            <small *ngIf="registerForm.controls['Phone'].dirty && registerForm.controls['Phone'].hasError('required')" class="text-danger">*Phone Number is Required</small>
+          </div>
+         
+          <table class = "center">
+  
+          
+          <button type="submit" class="button button1 mt-4 w-100 ">Register</button>
+        </table>
+          <div class="text-center pt-4 ">Already have an account?<a id="forget" routerLink="/login"> Sign Up</a></div>
+          <router-outlet></router-outlet> 
+        </form>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
   </body>
+  
