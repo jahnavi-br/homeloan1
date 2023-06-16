@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup,Validators, FormControl } from '@angular/forms';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-admin-login',
@@ -12,7 +13,7 @@ export class AdminLoginComponent {
   isText: boolean = false;
   eyeIcon: string = "fa fa-eye"
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private auth: AuthService){}
 
   ngOnInit(): 
     void{ this.adminForm = this.fb.group({
@@ -26,9 +27,16 @@ export class AdminLoginComponent {
      this.isText ? this.eyeIcon = "fa-eye" : this.eyeIcon="fa-eye-slash";
      this.isText ? this.type = "text" : this.type = "password";
   }
-  onSubmit(){
+  onAdminLogin(){
     if(this.adminForm.valid){
+      this.auth.userlogin(this.adminForm.value)
+      .subscribe({
+        next:(res)=>{alert(res.message)},
+      error:(err)=>{alert(err?.error.message)
+      }
+      })
       console.log(this.adminForm.value)
+      
     }
     else{
       console.log('Form is not Valid!')
